@@ -1,2 +1,2 @@
-dataURL: https://github-stg.dena.jp/pages/infosys-infra/hubble-data
+dataURL: https://pages.github-stg.dena.jp/infosys-infra/hubble-data
 exclude: ['spec', 'node_modules', 'README.md', '.gitignore', 'package.json', 'package-lock.json']
