@@ -9,6 +9,8 @@
       url: "/users-activity"
     - title: "Git Versions"
       url: "/users-git-versions"
+    - title: "Git Protocol"
+      url: "/users-git-protocol"
 - title: "Pull Requests"
   url: "/pr-usage"
   subnavigation:
@@ -25,6 +27,8 @@
       url: "/repos-activity"
     - title: "Total"
       url: "/repos-total"
+    - title: "Size"
+      url: "/repos-size"
 - title: "Organizations"
   url: "/orgs-activity"
   subnavigation:

@@ -27,10 +27,12 @@ module.exports = function(config)
             'assets/js/vendor/d3.v4.min.js',
             'assets/js/vendor/moment-with-locales-2.21.0.min.js',
             'assets/js/vendor/moment-timezone-0.5.14-2017c.min.js',
-            'assets/js/vendor/Chart-2.7.1.min.js',
+            'assets/js/vendor/Chart-2.7.3.min.js',
             'assets/js/vendor/spin-2.3.2.min.js',
-            'assets/js/charts.js',
-            'spec/*.js'
+            '_test/assets/js/charts.js',
+            'spec/*.js',
+            {pattern: 'assets/js/git-versions.json', watched: true, served: true, included: false},
+            {pattern: 'demo-data/git-versions-new.tsv', watched: true, served: true, included: false}
         ],
 
 
@@ -42,7 +44,7 @@ module.exports = function(config)
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'assets/js/*.js': ['coverage']
+            '_test/assets/js/*.js': ['coverage']
         },
 
 

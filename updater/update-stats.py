@@ -14,6 +14,7 @@ from reports.ReportContributorsByOrg import *
 from reports.ReportContributorsByRepo import *
 from reports.ReportForksToOrgs import *
 from reports.ReportGitDownload import *
+from reports.ReportGitProtocol import *
 from reports.ReportGitRequests import *
 from reports.ReportGitVersions import *
 from reports.ReportGitVersionsNew import *
@@ -28,6 +29,7 @@ from reports.ReportPRHistory import *
 from reports.ReportPRUsage import *
 from reports.ReportRepoActivity import *
 from reports.ReportRepositoryHistory import *
+from reports.ReportRepoSize import *
 from reports.ReportReposPersonalNonOwnerPushes import *
 from reports.ReportRepoUsage import *
 from reports.ReportTeamsLegacy import *
@@ -80,6 +82,7 @@ def main():
 	ReportContributorsByRepo(configuration, dataDirectory, metaStats).update()
 	ReportForksToOrgs(configuration, dataDirectory, metaStats).update()
 	ReportGitDownload(configuration, dataDirectory, metaStats).update()
+	ReportGitProtocol(configuration, dataDirectory, metaStats).update()
 	ReportGitRequests(configuration, dataDirectory, metaStats).update()
 	ReportGitVersions(configuration, dataDirectory, metaStats).update()
 	ReportGitVersionsNew(configuration, dataDirectory, metaStats).update()
@@ -94,6 +97,7 @@ def main():
 	ReportPRUsage(configuration, dataDirectory, metaStats).update()
 	ReportRepoActivity(configuration, dataDirectory, metaStats).update()
 	ReportRepositoryHistory(configuration, dataDirectory, metaStats).update()
+	ReportRepoSize(configuration, dataDirectory, metaStats).update()
 	ReportReposPersonalNonOwnerPushes(configuration, dataDirectory, metaStats).update()
 	ReportRepoUsage(configuration, dataDirectory, metaStats).update()
 	ReportTeamsLegacy(configuration, dataDirectory, metaStats).update()
